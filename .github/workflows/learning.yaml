@@ -1,8 +1,8 @@
 name: GitHub Actions Learning
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  test:
     runs on: ubuntu-latest
-     stops:
+     steps:
        - run: echo "This job was automatically triggered by a ${{github.push}} event"
        - run: python main.py
