@@ -1,8 +1,9 @@
 
 name: GitHub Actions Learning
-on: [push]
+on: [ push ]
 jobs:
-  test:
-    runs on: ubuntu-latest
-       - run: echo "This job was automatically triggered by a ${{github.push}} event"
-       - run: python main.py
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+       -run: "echo "This job was automatically triggered by a ${{github.push}} event"
+      - run: "python main.py"
